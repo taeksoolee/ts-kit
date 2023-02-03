@@ -18,18 +18,15 @@ function createRollupConfig(options, callback) {
   // https://nodejs.org/docs/latest/api/packages.html#packages_determining_module_system
   const extName = options.format === 'esm' ? 'mjs' : 'js';
   // const outputName = 'dist/' + [name, options.format, extName].join('.');
-  console.log(name);
   const outputName = 'dist/' + [name, options.format, extName].join('.');
-
   
   const config = {
     input: options.input,
     output: {
       file: outputName,
       format: options.format,
-      name: 'ReactHookForm',
+      name: 'ts-kit',
       sourcemap: true,
-      globals: { react: 'React' },
       exports: 'named',
     },
     plugins: [

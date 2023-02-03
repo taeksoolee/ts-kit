@@ -3,19 +3,19 @@
 const pkg = require('../../package.json');
 const { createRollupConfig } = require('./createRollupConfig');
 
-const name = 'index';
+
+function getOptions(name) {
+  const input = `src/${name === 'index' ? name : `${name}/index`}.ts`;
+  return [
+    { name, input, format: 'cjs', },
+    { name, input, format: 'esm' },
+    { name, input, format: 'umd', },
+  ];
+}
+
 const options = [
-  {
-    name,
-    format: 'cjs',
-    input: pkg.source,
-  },
-  { name, format: 'esm', input: pkg.source },
-  {
-    name,
-    format: 'umd',
-    input: pkg.source,
-  },
+  ...getOptions('index'),
+  ...getOptions('functional'),
 ];
 
 module.exports = {

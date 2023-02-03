@@ -1,4 +1,4 @@
-import { pipe } from "./functional";
+import { pipe } from ".";
 
 describe('pipe', () => {
   test('test string pipe', () => {
