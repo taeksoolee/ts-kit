@@ -1,5 +1,5 @@
 {
-  "name": "ts-kit",
+  "name": "@taeksoolee/ts-kit",
   "version": "1.0.0",
   "description": "development kit for typescript",
   "type": "module",
