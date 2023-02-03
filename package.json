@@ -1,5 +1,5 @@
 {
-  "name": "tsl-util",
+  "name": "ts-kit",
   "version": "1.0.0",
   "description": "development kit for typescript",
   "type": "module",
