@@ -4,6 +4,7 @@
   "description": "development kit for typescript",
   "type": "module",
   "main": "lib/index.js",
+  "types": "lib/src/index.d.ts",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
