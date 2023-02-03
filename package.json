@@ -3,13 +3,25 @@
   "version": "1.0.0",
   "description": "development kit for typescript",
   "type": "module",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "MIT",
+  "author": {
+    "name": "taeksoolee",
+    "email": "leets1490@gmail.com",
+    "url": "https://taeksoole.github.io"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "contributors": [
+    "taeksoolee <leets1490@gmail.com> (https://taeksoole.github.io)"
+  ],
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/plugin-syntax-async-generators": "^7.8.4",
@@ -27,5 +39,27 @@
     "typescript": "^4.9.5",
     "tslib": "^2.5.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {},
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "typescript",
+    "utility",
+    "functional"
+  ],
+  "homepage": "https://github.com/taeksoolee/ts-kit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taeksoolee/ts-kit"
+  },
+  "bugs": {
+    "url": "https://github.com/taeksoolee/ts-kit/issues",
+    "email": "leets1490@gmail.com"
+  },
+  "engines": {
+    "node": "~14.19.0",
+    "npm" : "~6.14.16"
+  }
 }
